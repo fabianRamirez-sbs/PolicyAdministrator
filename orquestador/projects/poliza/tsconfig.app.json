@@ -5,7 +5,11 @@
   "compilerOptions": {
     "typeRoots": ["../../node_modules/@types"],
     "outDir": "../../out-tsc/app",
-    "types": []
+    "types": [],
+    "baseUrl": "./",
+    "paths": {
+      "@components/*": ["components/*"]
+    }
   },
   "files": [
     "src/main.ts",

@@ -1,0 +1,10 @@
+<mat-toolbar color="primary">
+  <span>Lista de Pólizas</span>
+</mat-toolbar>
+
+<div style="padding: 16px;">
+  <mat-card *ngFor="let poliza of polizas" style="margin-bottom: 16px;">
+    <mat-card-title>{{ poliza.titulo }}</mat-card-title>
+    <mat-card-content>{{ poliza.descripcion }}</mat-card-content>
+  </mat-card>
+</div>

@@ -32,7 +32,8 @@
               }
             ],
             "styles": [
-              "projects/global/src/styles.scss"
+              "projects/global/src/styles.scss",
+              "node_modules/@angular/material/prebuilt-themes/indigo-pink.css"
             ],
             "scripts": [],
             "server": "projects/global/src/main.server.ts",
@@ -96,7 +97,8 @@
               }
             ],
             "styles": [
-              "projects/global/src/styles.scss"
+              "projects/global/src/styles.scss",
+              "node_modules/@angular/material/prebuilt-themes/indigo-pink.css"
             ],
             "scripts": []
           }
@@ -132,7 +134,8 @@
               }
             ],
             "styles": [
-              "projects/poliza/src/styles.scss"
+              "projects/poliza/src/styles.scss",
+              "node_modules/@angular/material/prebuilt-themes/indigo-pink.css"
             ],
             "scripts": [],
             "server": "projects/poliza/src/main.server.ts",
@@ -196,7 +199,8 @@
               }
             ],
             "styles": [
-              "projects/poliza/src/styles.scss"
+              "projects/poliza/src/styles.scss",
+              "node_modules/@angular/material/prebuilt-themes/indigo-pink.css"
             ],
             "scripts": []
           }

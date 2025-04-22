@@ -1,59 +1,58 @@
 # Orquestador
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.7.
+Este proyecto es un monorepo Angular que contiene varias aplicaciones, incluyendo `global` y `poliza`.
 
-## Development server
+## Requisitos previos
 
-To start a local development server, run:
+- Node.js y npm instalados v23.0.0
+- Angular CLI instalado globalmente (`npm install -g @angular/cli`)
 
-```bash
-ng serve
-```
+## Instalación de dependencias
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Desde la raíz del monorepo:
 
 ```bash
-ng generate component component-name
+cd orquestador
+npm install
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Ejecución en local
+
+Puedes ejecutar cualquiera de las aplicaciones del monorepo. Por ejemplo:
+
+### Ejecutar la aplicación `global`
 
 ```bash
-ng generate --help
+ng serve global
 ```
 
-## Building
-
-To build the project run:
+### Ejecutar la aplicación `poliza`
 
 ```bash
-ng build
+ng serve poliza
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Por defecto, la aplicación se ejecutará en `http://localhost:4200/`. Puedes cambiar el puerto con el parámetro `--port`.
 
-## Running unit tests
+## Compilación para despliegue (build de producción)
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Para compilar una aplicación para producción:
+
+### Compilar `global` para producción
 
 ```bash
-ng test
+ng build global --configuration production
 ```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+### Compilar `poliza` para producción
 
 ```bash
-ng e2e
+ng build poliza --configuration production
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Los archivos generados estarán en `orquestador/dist/global` o `orquestador/dist/poliza` respectivamente.
 
-## Additional Resources
+## Recursos adicionales
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Para más información sobre Angular CLI y monorepositorios, consulta la [documentación oficial de Angular](https://angular.dev/tools/cli).
+

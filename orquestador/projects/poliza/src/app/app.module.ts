@@ -6,14 +6,13 @@ import { AppRoutingModule } from './app.routes';
 import { MaterialModule } from './material.module';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [],
   imports: [
     CommonModule,
     MaterialModule,
     RouterModule,
     AppRoutingModule,
+    AppComponent
   ],
   providers: [],
   bootstrap: [AppComponent],

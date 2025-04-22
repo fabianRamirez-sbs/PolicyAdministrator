@@ -23,13 +23,13 @@ Puedes ejecutar cualquiera de las aplicaciones del monorepo. Por ejemplo:
 ### Ejecutar la aplicación `global`
 
 ```bash
-ng serve global
+ng serve global --port 4201
 ```
 
 ### Ejecutar la aplicación `poliza`
 
 ```bash
-ng serve poliza
+ng serve poliza --port 4200
 ```
 
 Por defecto, la aplicación se ejecutará en `http://localhost:4200/`. Puedes cambiar el puerto con el parámetro `--port`.

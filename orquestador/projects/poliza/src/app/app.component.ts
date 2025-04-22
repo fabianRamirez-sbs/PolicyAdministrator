@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
 import { NgFor } from '@angular/common';
+import { ListarPolizasComponent } from '../component/listar-polizas/listar-polizas.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [MatToolbarModule, MatCardModule, NgFor],
+  imports: [MatToolbarModule, MatCardModule, NgFor, ListarPolizasComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
